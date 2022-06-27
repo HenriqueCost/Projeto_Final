@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/dados_produto")
-public class Client_Controller {
+public class Data_Controller {
 
     @GetMapping
     public String hello(){
