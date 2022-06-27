@@ -9,7 +9,7 @@ import java.util.Objects;
 
 @SpringBootApplication
 @Entity
-public class Dados {
+public class cttMunicipio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -39,8 +39,8 @@ public class Dados {
             return true;
         if (obj == null || getClass() != obj.getClass())
             return false;
-        Dados dados = (Dados) obj;
-            return getId().equals(dados.getId());
+        cttMunicipio ctt = (cttMunicipio) obj;
+            return getId().equals(ctt.getId());
     }
 
     @Override
@@ -49,7 +49,7 @@ public class Dados {
     }
 
     public static void main(String[] args){
-        SpringApplication.run(Dados.class, args);
+        SpringApplication.run(cttMunicipio.class, args);
     }
 }
 

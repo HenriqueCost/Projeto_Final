@@ -1,6 +1,6 @@
 package Client_Data;
 
-import Modelo_de_dados.Dados;
+import Modelo_de_dados.cttMunicipio;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +15,7 @@ import java.util.List;
 public class Data_Controller {
 
     @GetMapping
-    public List<Dados> List(){
+    public List<cttMunicipio> List(){
     }
     public static void main(String[] args){
         SpringApplication.run(Data_Controller.class, args);
